@@ -38,12 +38,8 @@ Fs = int(1.0 / dt)  # the sampling frequency
 # fft computation
 ##############################
 CHUNK = t.shape[0] // 15
-afft = np.abs(fft(x[-CHUNK:]))[:CHUNK//2] * 2 / CHUNK
-freqs = fftfreq(CHUNK, 1/Fs)[:CHUNK//2]
-# afft = np.abs(np.fft.fft(signal[0:CHUNK]))
-# freqs = np.linspace(0,Fs,CHUNK)[0:int(Fs/2)]
-# spectrogram_chunk = freqs/np.amax(freqs*1.0)
-
+# afft = np.abs(fft(x[-CHUNK:]))[:CHUNK//2] * 2 / CHUNK
+# freqs = fftfreq(CHUNK, 1/Fs)[:CHUNK//2]
 # Plot fft analysis
 # plt.plot(freqs,afft)
 # plt.xlim(0, 100)
