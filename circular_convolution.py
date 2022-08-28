@@ -1,6 +1,6 @@
 import numpy as np
 # circular shift operation
-# [1 2 3 4] = [4 1 2 3]
+# [1 2 3 4] => [4 1 2 3]
 def shifter(matrix):
     return np.roll(np.array(matrix),1).tolist()
 #  finding circular convolution
@@ -34,7 +34,8 @@ def findCircularConvolution(x, h, N = None):
     return resultant
 
 def findLinearConvolution(x, h):
-    return np.convolve(np.array(x, dtype=float), np.array(h, dtype=float)).tolist()
+    return (np.convolve(np.array(x, dtype=float),
+    np.array(h, dtype=float)).tolist())
     
 # x = [int(x) for x in input('Enter the x(n) -> ').split()]
 # h = [int(x) for x in input('Enter the h(n) -> ').split()]
