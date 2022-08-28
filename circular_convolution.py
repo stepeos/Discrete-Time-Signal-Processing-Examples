@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import numpy as np
 # circular shift operation
 # [1 2 3 4] => [4 1 2 3]
