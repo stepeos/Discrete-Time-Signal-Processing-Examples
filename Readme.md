@@ -1,4 +1,4 @@
-# Python Tutorial for discrete time signal processing tasks 
+# Python Tutorial for Discrete Time Signal Processing Tasks 
 ## (ECHTZEITDATENVERARBEITUNG)
 The following tasks are implemented:
 - spectrogram
